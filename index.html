@@ -69,9 +69,80 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-java学习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-Java学习记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/08/06/java%E5%AD%A6%E4%B9%A0/" class="article-date">
+    <a href="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2024-08-05T17:14:51.000Z" itemprop="datePublished">2024-08-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/">Java学习记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="第一个Java程序"><a href="#第一个Java程序" class="headerlink" title="第一个Java程序"></a>第一个Java程序</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;echo:&quot;</span> + in.nextLine());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="变量赋值"><a href="#变量赋值" class="headerlink" title="变量赋值"></a>变量赋值</h2><p>感觉定义方法和c一样吧</p>
+<p>变量的名字是一种标识符，由字母、数字和下划线组成，数字不能出现在第一位，Java关键词不可作标识符</p>
+<img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240805235554323.png" alt="image-20240805235554323" style="zoom:80%;" />
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        </span><br><span class="line"><span class="comment">//      final int amount = 10;	//常量定义</span></span><br><span class="line">        <span class="type">int</span> amount;</span><br><span class="line">        amount = in.nextInt();</span><br><span class="line">        </span><br><span class="line">        <span class="type">int</span> price;</span><br><span class="line">        price = in.nextInt();</span><br><span class="line">        System.out.println(amount + <span class="string">&quot;+&quot;</span> + price + <span class="string">&quot;=&quot;</span> + (amount+price));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>print后不换行，println后换行</p>
+<h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(foot+inch/<span class="number">12</span>)*<span class="number">0.3048</span></span><br></pre></td></tr></table></figure>
+
+<p>运算错误，可以把inch定义为double或者改为12.0</p>
+<p>注：浮点数计算有误差</p>
+<img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806002537684.png" alt="image-20240806002537684" style="zoom:80%;" />
+
+
+
+<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h2><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806002806968.png" alt="image-20240806002806968" style="zoom:67%;" />
+
+<p>一般自左向右，赋值是自右向左</p>
+<img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806003141053.png" alt="image-20240806003141053" style="zoom:50%;" />
+
+
+
+<h2 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h2><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806003541062.png" alt="image-20240806003541062" style="zoom:80%;" />
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> foot;</span><br><span class="line">foot = (<span class="type">int</span>)(<span class="number">32</span>/<span class="number">3.0</span>)</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/" data-id="clzh96b3n0001ukstgbmcc1h9" data-title="Java学习记" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Java学习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/08/06/Java%E5%AD%A6%E4%B9%A0/" class="article-date">
   <time class="dt-published" datetime="2024-08-05T16:53:07.787Z" itemprop="datePublished">2024-08-06</time>
 </a>
     
@@ -190,7 +261,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/08/06/java%E5%AD%A6%E4%B9%A0/" data-id="clzh8dbn60000pgst6tkq4mwg" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/08/06/Java%E5%AD%A6%E4%B9%A0/" data-id="clzh96b3l0000ukstfbr7agjl" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -272,7 +343,11 @@
       <ul>
         
           <li>
-            <a href="/2024/08/06/java%E5%AD%A6%E4%B9%A0/">(no title)</a>
+            <a href="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/">Java学习记</a>
+          </li>
+        
+          <li>
+            <a href="/2024/08/06/Java%E5%AD%A6%E4%B9%A0/">(no title)</a>
           </li>
         
           <li>
