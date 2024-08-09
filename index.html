@@ -116,7 +116,7 @@
 <li><strong>public</strong> : 对<strong>所有类</strong>可见。使用对象：类、接口、变量、方法</li>
 <li><strong>protected</strong> : 对<strong>同一包内的类和所有子类</strong>可见。使用对象：变量、方法。 （<strong>注意：不能修饰类（外部类）</strong>）。</li>
 </ul>
-<p><img src="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240807211630500.png" alt="image-20240807211630500"></p>
+<p><img src="/pic/2/1.png"></p>
 <blockquote>
 <p>保护权限和私有权限的区别主要在于继承方面：</p>
 <ul>
@@ -126,7 +126,7 @@
 </li>
 </ul>
 </blockquote>
-<h1 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h1><p><img src="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240716195043909.png" alt="image-20240716195043909"></p>
+<h1 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h1><p><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240716195043909.png" alt="image-20240716195043909"></p>
 <h1 id="注释方法"><a href="#注释方法" class="headerlink" title="注释方法"></a>注释方法</h1><p>单行注释</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br></pre></td></tr></table></figure>
 
@@ -245,7 +245,7 @@
 <p>2.string转基本类型</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> <span class="string">&quot;123&quot;</span> ;</span><br><span class="line"><span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> Integer.parseInt(s); <span class="comment">//123</span></span><br><span class="line"><span class="type">short</span> <span class="variable">num2</span> <span class="operator">=</span> Short. parseShort(s); <span class="comment">//123</span></span><br><span class="line"><span class="type">double</span> <span class="variable">num3</span> <span class="operator">=</span> Double.parseDouble(s); <span class="comment">//123.0</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><p><img src="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240722154912602.png" alt="image-20240722154912602"></p>
+<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><p><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240722154912602.png" alt="image-20240722154912602"></p>
 <h1 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h1><ul>
 <li><p>重载(overloading) 是在一个类里面，方法名字相同，而参数不同。返回类型可以相同也可以不同。</p>
 </li>
@@ -284,7 +284,7 @@
 
 <h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>继承是从已有的类中派生出新的类，新的类能吸收已有类的数据属性和行为，并能扩展新的能力。通俗来说，继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为</p>
 <h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><p>Java继承分为单继承和多重继承。</p>
-<img src="C:/Users/LENOVO/AppData/Roaming/Typora/typora-user-images/image-20240809111533693.png" alt="image-20240809111533693" style="zoom:80%;">
+<img src="C:/Users/LENOVO/AppData/Roaming/Typora/typora-user-images/image-20240809111533693.png" alt="image-20240809111533693" style="zoom:80%;" />
 
 <h2 id="体现-1"><a href="#体现-1" class="headerlink" title="体现"></a>体现</h2><ul>
 <li><p>一旦子类A继承了父类B以后，子类A中就获取了父类中声明的结构（属性、方法）。特别的：父类中声明为private的属性或方法，子类继承父类以后仍然获取了父类的私有结构，只是因为封装性的影响，使得子类不能直接调用父类的结构（可以使用set或get获取）。</p>
@@ -356,7 +356,7 @@
 <p>重写是子类对父类非静态、非private修饰，非final修饰，非构造方法等的实现过程进行重新编写, 返回值和形参都不能改变。即外壳不变，核心重写</p>
 <p>每一个重写的方法上都会有 <strong>@Override</strong> 注释，用来标记该方法是重写方法</p>
 <p>如：类中经常会重写顶级父类<strong>Object的 toString()</strong> 方法</p>
-<h2 id="重写与重载的区别"><a href="#重写与重载的区别" class="headerlink" title="重写与重载的区别"></a>重写与重载的区别</h2><img src="C:/Users/LENOVO/AppData/Roaming/Typora/typora-user-images/image-20240809153026890.png" alt="image-20240809153026890" style="zoom:80%;">
+<h2 id="重写与重载的区别"><a href="#重写与重载的区别" class="headerlink" title="重写与重载的区别"></a>重写与重载的区别</h2><img src="C:/Users/LENOVO/AppData/Roaming/Typora/typora-user-images/image-20240809153026890.png" alt="image-20240809153026890" style="zoom:80%;" />
 
 <ul>
 <li><p>方法重载是<strong>一个类中</strong>定义了多个方法名相同,而他们的参数的数量不同或数量相同而类型和次序不同</p>
@@ -388,7 +388,7 @@
 
 <h2 id="变量赋值"><a href="#变量赋值" class="headerlink" title="变量赋值"></a>变量赋值</h2><p>感觉定义方法和c一样吧</p>
 <p>变量的名字是一种标识符，由字母、数字和下划线组成，数字不能出现在第一位，Java关键词不可作标识符</p>
-<img src="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240805235554323.png" alt="image-20240805235554323" style="zoom:80%;">
+<img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240805235554323.png" alt="image-20240805235554323" style="zoom:80%;" />
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        </span><br><span class="line"><span class="comment">//      final int amount = 10;	//常量定义</span></span><br><span class="line">        <span class="type">int</span> amount;</span><br><span class="line">        amount = in.nextInt();</span><br><span class="line">        </span><br><span class="line">        <span class="type">int</span> price;</span><br><span class="line">        price = in.nextInt();</span><br><span class="line">        System.out.println(amount + <span class="string">&quot;+&quot;</span> + price + <span class="string">&quot;=&quot;</span> + (amount+price));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -397,25 +397,25 @@
 
 <p>运算错误，可以把inch定义为double或者改为12.0</p>
 <p>注：浮点数计算有误差</p>
-<img src="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806002537684.png" alt="image-20240806002537684" style="zoom:80%;">
+<img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806002537684.png" alt="image-20240806002537684" style="zoom:80%;" />
 
 
 
-<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h2><img src="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806002806968.png" alt="image-20240806002806968" style="zoom:67%;">
+<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h2><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806002806968.png" alt="image-20240806002806968" style="zoom:67%;" />
 
 <p>一般自左向右，赋值是自右向左</p>
-<img src="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806003141053.png" alt="image-20240806003141053" style="zoom:50%;">
+<img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806003141053.png" alt="image-20240806003141053" style="zoom:50%;" />
 
 
 
-<h2 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h2><img src="/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806003541062.png" alt="image-20240806003541062" style="zoom:80%;">
+<h2 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h2><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806003541062.png" alt="image-20240806003541062" style="zoom:80%;" />
 
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> foot;</span><br><span class="line">foot = (<span class="type">int</span>)(<span class="number">32</span>/<span class="number">3.0</span>)</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/" data-id="clzh96b3n0001ukstgbmcc1h9" data-title="Java学习记" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/08/06/Java%E5%AD%A6%E4%B9%A0%E8%AE%B0/" data-id="clzmv3btj0000lkstg13nhb0q" data-title="Java学习记" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -452,12 +452,12 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>Hello，nice to meet you!</p>
-<p><img src="/pic/ba.jpg" title="baba"></p>
+<p><img src="/pic/ba.jpg" title="八奈见"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/07/31/my-first-blog/" data-id="clzedmvmk0000vostb5qab6mt" data-title="My First Post" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/07/31/my-first-blog/" data-id="clzmv3btr0003lkstadz13mkq" data-title="My First Post" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
