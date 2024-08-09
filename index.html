@@ -96,15 +96,21 @@
 
 
 
-<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/662E827A-FA32-4464-B0BD-40087F429E98.jpg" alt="img"></p>
-<h1 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h1><h2 id="类名"><a href="#类名" class="headerlink" title="类名"></a>类名</h2><p>对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写</p>
-<h2 id="方法名"><a href="#方法名" class="headerlink" title="方法名"></a>方法名</h2><p>所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写</p>
-<h2 id="源文件名"><a href="#源文件名" class="headerlink" title="源文件名"></a>源文件名</h2><p>当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 .java。（如果文件名和类名不相同则会导致编译错误）</p>
-<h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><ul>
+<p><img src="https://www.runoob.com/wp-content/uploads/2013/12/662E827A-FA32-4464-B0BD-40087F429E98.jpg"></p>
+<h1 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h1><p><strong>类名</strong></p>
+<p>对于所有的类来说，类名的首字母应该大写。如果类名由若干单词组成，那么每个单词的首字母应该大写</p>
+<p><strong>方法名</strong></p>
+<p>所有的方法名都应该以小写字母开头。如果方法名含有若干单词，则后面的每个单词首字母大写</p>
+<p><strong>源文件名</strong></p>
+<p>当保存文件的时候，你应该使用类名作为文件名保存（切记 Java 是大小写敏感的），文件名的后缀为 .java。（如果文件名和类名不相同则会导致编译错误）</p>
+<p><strong>标识符</strong></p>
+<ul>
 <li>所有的标识符都应该以字母（A-Z 或者 a-z）,美元符（$）、或者下划线（_）开始</li>
 <li>首字符之后可以是字母（A-Z 或者 a-z）,美元符（$）、下划线（_）或数字的任何字符组合</li>
 <li>关键字不能用作标识符</li>
 </ul>
+<p><strong>关键字</strong></p>
+<p><img src="/pic/2/2.png"></p>
 <h1 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h1><p>修饰符用来定义类、方法或者变量，通常放在语句的最前端。分为以下两种：</p>
 <ul>
 <li>访问控制修饰符 : default, public , protected, private</li>
@@ -117,7 +123,6 @@
 <li><strong>protected</strong> : 对<strong>同一包内的类和所有子类</strong>可见。使用对象：变量、方法。 （<strong>注意：不能修饰类（外部类）</strong>）。</li>
 </ul>
 <p><img src="/pic/2/1.png"></p>
-<blockquote>
 <p>保护权限和私有权限的区别主要在于继承方面：</p>
 <ul>
 <li><p>保护权限下子类可以访问父类</p>
@@ -125,18 +130,14 @@
 <li><p>私有权限下子类不可以访问父类</p>
 </li>
 </ul>
-</blockquote>
-<h1 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h1><p><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240716195043909.png" alt="image-20240716195043909"></p>
-<h1 id="注释方法"><a href="#注释方法" class="headerlink" title="注释方法"></a>注释方法</h1><p>单行注释</p>
+<h1 id="注释方法"><a href="#注释方法" class="headerlink" title="注释方法"></a>注释方法</h1><p>1.单行注释</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br></pre></td></tr></table></figure>
 
-<p>多行注释</p>
+<p>2.多行注释</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">这是一个多行注释</span></span><br><span class="line"><span class="comment">可以用来注释多行代码</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
-<p>文档注释</p>
+<p>3.文档注释</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 这是一个文档注释示例</span></span><br><span class="line"><span class="comment"> * 它通常包含有关类、方法或字段的详细信息</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-
-
 
 <h1 id="源文件声明规则"><a href="#源文件声明规则" class="headerlink" title="源文件声明规则"></a>源文件声明规则</h1><p>当在一个源文件中定义多个类，并且还有import语句和package语句时，要特别注意这些规则。</p>
 <ul>
@@ -147,17 +148,17 @@
 <li>如果源文件包含 import 语句，那么应该放在 package 语句和类定义之间。如果没有 package 语句，那么 import 语句应该在源文件中最前面。</li>
 <li>import 语句和 package 语句对源文件中定义的所有类都有效。在同一源文件中，不能给不同的类不同的包声明。</li>
 </ul>
-<h1 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h1><p>1、<strong>类（Class）</strong>：</p>
+<h1 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h1><p><strong>类（Class）</strong>：</p>
 <ul>
 <li>定义对象的蓝图，包括属性和方法。</li>
 <li>示例：<code>public class Car &#123; ... &#125;</code></li>
 </ul>
-<p><strong>2、对象（Object）</strong>：</p>
+<p><strong>对象（Object）</strong>：</p>
 <ul>
 <li>类的<strong>实例</strong>，具有状态和行为。</li>
 <li>示例：<code>Car myCar = new Car();</code></li>
 </ul>
-<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><h3 id="类的结构"><a href="#类的结构" class="headerlink" title="类的结构"></a>类的结构</h3><p>类包含属性和行为，属性即变量，行为即方法。</p>
+<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>类包含属性和行为，属性即变量，行为即方法。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">class 类名&#123;</span><br><span class="line">	属性;</span><br><span class="line">	行为;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>示例：</p>
@@ -166,7 +167,8 @@
 
 
 <h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><p>类中属性就是定义的变量，有两种变量：成员变量（实例变量）、局部变量和类变量（静态变量）</p>
-<h4 id="成员变量（实例变量）"><a href="#成员变量（实例变量）" class="headerlink" title="成员变量（实例变量）"></a>成员变量（实例变量）</h4><ul>
+<p><strong>成员变量（实例变量）</strong></p>
+<ul>
 <li><p>成员变量定义在类中，在<strong>整个类</strong>中都可以被访问。</p>
 </li>
 <li><p>成员变量<strong>随着对象</strong>的建立而建立，随着对象的消失而消失，存在于对象所在的堆内存中。</p>
@@ -176,9 +178,8 @@
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ClassName</span>&#123;</span><br><span class="line">	<span class="type">int</span> a;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> printNumber（）&#123;</span><br><span class="line">		<span class="comment">// 其他代码</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-<h4 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h4><ul>
+<p><strong>局部变量</strong></p>
+<ul>
 <li><p>局部变量只定义在<strong>局部范围</strong>内，如：方法（函数）内，语句内等，只在所属的区域有效。</p>
 </li>
 <li><p>局部变量存在于栈内存中，作用的范围结束，变量空间会自动释放。</p>
@@ -188,9 +189,8 @@
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ClassName</span>&#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> printNumber（）&#123;</span><br><span class="line">		<span class="type">int</span> a;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// 其他代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-<h4 id="类变量（静态变量）"><a href="#类变量（静态变量）" class="headerlink" title="类变量（静态变量）"></a>类变量（静态变量）</h4><ul>
+<p><strong>类变量（静态变量）</strong></p>
+<ul>
 <li><p>定义在<strong>类中，方法体之外</strong>，但必须要有 <strong>static</strong> 来声明变量类型。</p>
 </li>
 <li><p>静态成员属于<strong>整个类</strong>，可通过对象名或类名来调用。</p>
@@ -200,7 +200,8 @@
 
 <p>在使用变量时需要遵循的原则为：<strong>就近原则</strong></p>
 <h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>方法可分为三种方法：构造方法、普通方法和类方法</p>
-<p>1.<strong>构造方法</strong>：构造方法作用就是对类进行初始化。每个类都有构造方法。如果没有显式地为类定义构造方法，Java编译器将会为该类提供一个默认不带任何参数的构造方法。</p>
+<ol>
+<li><p><strong>构造方法</strong>：构造方法作用就是对类进行初始化。每个类都有构造方法。如果没有显式地为类定义构造方法，Java编译器将会为该类提供一个默认不带任何参数的构造方法。</p>
 <ul>
 <li><p>构造函数<strong>没有返回值</strong>也<strong>不写void</strong>。</p>
 </li>
@@ -209,16 +210,18 @@
 <li><p>一个类可以有<strong>多个</strong>构造方法。</p>
 </li>
 </ul>
-<p>2.<strong>普通方法</strong></p>
-<p>3.<strong>类方法（静态方法</strong>）：使用<strong>static</strong>关键字修饰的方法就是静态方法。</p>
+</li>
+<li><p><strong>普通方法</strong></p>
+</li>
+<li><p><strong>类方法（静态方法</strong>）：使用<strong>static</strong>关键字修饰的方法就是静态方法。</p>
+</li>
+</ol>
 <h2 id="创建对象"><a href="#创建对象" class="headerlink" title="创建对象"></a>创建对象</h2><p>类中的函数名应与类名一致</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">dog</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">dog</span><span class="params">(String name)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        System.out.println(<span class="string">&quot;小狗的名字是：&quot;</span> + name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test</span> &#123;</span><br><span class="line">    <span class="comment">//psvm快捷键</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        <span class="type">dog</span> <span class="variable">mydog</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">dog</span>(<span class="string">&quot;tom&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
 <h2 id="访问变量和方法"><a href="#访问变量和方法" class="headerlink" title="访问变量和方法"></a>访问变量和方法</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 实例化对象 */</span></span><br><span class="line"><span class="type">Object</span> <span class="variable">referenceVariable</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Constructor</span>();</span><br><span class="line"><span class="comment">/* 访问类中的变量 */</span></span><br><span class="line">referenceVariable.variableName;</span><br><span class="line"><span class="comment">/* 访问类中的方法 */</span></span><br><span class="line">referenceVariable.methodName();</span><br></pre></td></tr></table></figure>
-
-
 
 <h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Puppy</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> age;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 构造器</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Puppy</span><span class="params">(String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        System.out.println(<span class="string">&quot;小狗的名字是 : &quot;</span> + name);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 设置 age 的值</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> age)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 获取 age 的值</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 获取 name 的值</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 主方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">// 创建对象</span></span><br><span class="line">        <span class="type">Puppy</span> <span class="variable">myPuppy</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Puppy</span>(<span class="string">&quot;a&quot;</span>);</span><br><span class="line"> </span><br><span class="line">        <span class="comment">// 通过方法来设定 age</span></span><br><span class="line">        myPuppy.setAge(<span class="number">2</span>);</span><br><span class="line"> </span><br><span class="line">        <span class="comment">// 调用另一个方法获取 age</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">age</span> <span class="operator">=</span> myPuppy.getAge();</span><br><span class="line">        System.out.println(<span class="string">&quot;小狗的年龄为 : &quot;</span> + age);</span><br><span class="line"> </span><br><span class="line">        <span class="comment">// 也可以直接访问成员变量（通过 getter 方法）</span></span><br><span class="line">        System.out.println(<span class="string">&quot;变量值 : &quot;</span> + myPuppy.getAge());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -245,7 +248,7 @@
 <p>2.string转基本类型</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> <span class="string">&quot;123&quot;</span> ;</span><br><span class="line"><span class="type">int</span> <span class="variable">num1</span> <span class="operator">=</span> Integer.parseInt(s); <span class="comment">//123</span></span><br><span class="line"><span class="type">short</span> <span class="variable">num2</span> <span class="operator">=</span> Short. parseShort(s); <span class="comment">//123</span></span><br><span class="line"><span class="type">double</span> <span class="variable">num3</span> <span class="operator">=</span> Double.parseDouble(s); <span class="comment">//123.0</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><p><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240722154912602.png" alt="image-20240722154912602"></p>
+<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><p><img src="/pic/2/3.png"></p>
 <h1 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h1><ul>
 <li><p>重载(overloading) 是在一个类里面，方法名字相同，而参数不同。返回类型可以相同也可以不同。</p>
 </li>
@@ -266,9 +269,7 @@
 <li><p>无法以返回值类型作为重载函数的区分标准。</p>
 </li>
 </ul>
-<blockquote>
-<p>见test中的car和demo1</p>
-</blockquote>
+<p>（见test中的car和demo1）</p>
 <h2 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">double</span> <span class="title function_">add</span><span class="params">(<span class="type">double</span> a, <span class="type">double</span> b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">add</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> c)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> a + b + c;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>在上面的例子中，<code>add</code> 方法被重载了三次，每次参数列表都不一样。虽然方法名相同，但编译器根据参数列表的不同来决定调用哪个方法</p>
@@ -277,15 +278,12 @@
 <p>2.不对外暴露的私有的方法</p>
 <p>3.单例模式（一个类只有一个实例）</p>
 <h2 id="一些疑惑"><a href="#一些疑惑" class="headerlink" title="一些疑惑"></a>一些疑惑</h2><p>见test中的Animal类</p>
-<blockquote>
-<p>与gpt的对话</p>
-</blockquote>
+<p>（与gpt进行的一些灵魂上的交流：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//所以在这个代码中必须把main函数写在animal类中，若另建一个main类就不能实现了对吗？</span><br><span class="line">//可以实现。通常情况下，main 方法会放在一个独立的类中，专门用于启动应用程序。</span><br><span class="line">//但是name变量不是私有的吗，其他类不能访问?</span><br><span class="line">//尽管 name 变量是私有的，但可以通过 Animal 类提供的公共 getter 和 setter 方法来访问和修改它。这就是封装的概念：通过公共方法控制对私有属性的访问</span><br></pre></td></tr></table></figure>
 
 <h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><p>继承是从已有的类中派生出新的类，新的类能吸收已有类的数据属性和行为，并能扩展新的能力。通俗来说，继承就是子类继承父类的特征和行为，使得子类对象（实例）具有父类的实例域和方法，或子类从父类继承方法，使得子类具有父类相同的行为</p>
 <h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><p>Java继承分为单继承和多重继承。</p>
-<img src="C:/Users/LENOVO/AppData/Roaming/Typora/typora-user-images/image-20240809111533693.png" alt="image-20240809111533693" style="zoom:80%;" />
-
+<p><img src="/pic/2/4.png"></p>
 <h2 id="体现-1"><a href="#体现-1" class="headerlink" title="体现"></a>体现</h2><ul>
 <li><p>一旦子类A继承了父类B以后，子类A中就获取了父类中声明的结构（属性、方法）。特别的：父类中声明为private的属性或方法，子类继承父类以后仍然获取了父类的私有结构，只是因为封装性的影响，使得子类不能直接调用父类的结构（可以使用set或get获取）。</p>
 </li>
@@ -300,8 +298,6 @@
 
 <p>输出：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">who</span>? a正在吃饭...</span><br><span class="line">a正在吃饭...</span><br></pre></td></tr></table></figure>
-
-
 
 <h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><ol>
 <li>一个类可以被<strong>多个子类</strong>继承</li>
@@ -356,8 +352,7 @@
 <p>重写是子类对父类非静态、非private修饰，非final修饰，非构造方法等的实现过程进行重新编写, 返回值和形参都不能改变。即外壳不变，核心重写</p>
 <p>每一个重写的方法上都会有 <strong>@Override</strong> 注释，用来标记该方法是重写方法</p>
 <p>如：类中经常会重写顶级父类<strong>Object的 toString()</strong> 方法</p>
-<h2 id="重写与重载的区别"><a href="#重写与重载的区别" class="headerlink" title="重写与重载的区别"></a>重写与重载的区别</h2><img src="C:/Users/LENOVO/AppData/Roaming/Typora/typora-user-images/image-20240809153026890.png" alt="image-20240809153026890" style="zoom:80%;" />
-
+<h2 id="重写与重载的区别"><a href="#重写与重载的区别" class="headerlink" title="重写与重载的区别"></a>重写与重载的区别</h2><p><img src="/pic/2/5.png"></p>
 <ul>
 <li><p>方法重载是<strong>一个类中</strong>定义了多个方法名相同,而他们的参数的数量不同或数量相同而类型和次序不同</p>
 </li>
@@ -377,40 +372,7 @@
 
 
 
-<h1 id="课后作业"><a href="#课后作业" class="headerlink" title="课后作业"></a>课后作业</h1><p>![img](file:&#x2F;&#x2F;&#x2F;C:\Users\LENOVO\Documents\Tencent Files\2842813807\Image\C2C\SFQLE37C&#96;C_A2@2%%ANOUKX.png)</p>
-<h1 id="翁恺-Java"><a href="#翁恺-Java" class="headerlink" title="翁恺 Java"></a>翁恺 Java</h1><h2 id="第一个Java程序"><a href="#第一个Java程序" class="headerlink" title="第一个Java程序"></a>第一个Java程序</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;echo:&quot;</span> + in.nextLine());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="变量赋值"><a href="#变量赋值" class="headerlink" title="变量赋值"></a>变量赋值</h2><p>感觉定义方法和c一样吧</p>
-<p>变量的名字是一种标识符，由字母、数字和下划线组成，数字不能出现在第一位，Java关键词不可作标识符</p>
-<img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240805235554323.png" alt="image-20240805235554323" style="zoom:80%;" />
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Hello</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        </span><br><span class="line"><span class="comment">//      final int amount = 10;	//常量定义</span></span><br><span class="line">        <span class="type">int</span> amount;</span><br><span class="line">        amount = in.nextInt();</span><br><span class="line">        </span><br><span class="line">        <span class="type">int</span> price;</span><br><span class="line">        price = in.nextInt();</span><br><span class="line">        System.out.println(amount + <span class="string">&quot;+&quot;</span> + price + <span class="string">&quot;=&quot;</span> + (amount+price));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>print后不换行，println后换行</p>
-<h2 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(foot+inch/<span class="number">12</span>)*<span class="number">0.3048</span></span><br></pre></td></tr></table></figure>
-
-<p>运算错误，可以把inch定义为double或者改为12.0</p>
-<p>注：浮点数计算有误差</p>
-<img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806002537684.png" alt="image-20240806002537684" style="zoom:80%;" />
-
-
-
-<h2 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h2><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806002806968.png" alt="image-20240806002806968" style="zoom:67%;" />
-
-<p>一般自左向右，赋值是自右向左</p>
-<img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806003141053.png" alt="image-20240806003141053" style="zoom:50%;" />
-
-
-
-<h2 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h2><img src="C:\Users\LENOVO\AppData\Roaming\Typora\typora-user-images\image-20240806003541062.png" alt="image-20240806003541062" style="zoom:80%;" />
-
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> foot;</span><br><span class="line">foot = (<span class="type">int</span>)(<span class="number">32</span>/<span class="number">3.0</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="课后作业"><a href="#课后作业" class="headerlink" title="课后作业"></a>课后作业</h1><p><img src="/pic/2/6.png"></p>
 
       
     </div>
